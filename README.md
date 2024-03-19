@@ -9,7 +9,7 @@ The group utilized a dataset from [Kaggle](https://www.kaggle.com/datasets/itach
 ## Data Pre-Processing
 To prepare the dataset for machine learning, the following pre-processing steps were taken:
 
-1. The group decided to use 10/41 diseases, so the data frame was filtered for the following diseases
+1. The group decided to use 10/41 diseases, so the data frame was filtered for the following diseases:
     - Allergy
     - Drug Reaction
     - Migraine
@@ -20,10 +20,13 @@ To prepare the dataset for machine learning, the following pre-processing steps 
     - Hypoglycemia
     - Urinary Tract Infection
     - Chicken Pox 
-2. The data was broken into X and y data frames, X representing the features and y representing the output
+2. The data was broken into X and y data frames, with X representing the features and y representing the output.
     - X = Disease Column
     - y = Symptom Columns
-4. 
+3. The X dataset was encoded first using `pd.get_dummies(X, dtype=int)`. This resulted in 127 columns of symptoms, which would need the titles cleaned and duplicate symptom columns combined.
+4. The `Symptom_X_` prefix was removed from all the columns to leave only the symptom name.
+5. The duplicate columns were combined via addition through `X=X.groupby(level=0,axis=1).sum()`.
+6. 
 
 
 
