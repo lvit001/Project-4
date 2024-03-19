@@ -23,10 +23,11 @@ To prepare the dataset for machine learning, the following pre-processing steps 
 2. The data was broken into X and y data frames, with X representing the features and y representing the output.
     - X = Disease Column
     - y = Symptom Columns
-3. The X dataset was encoded first using `pd.get_dummies(X, dtype=int)`. This resulted in 127 columns of symptoms, which would need the titles cleaned and duplicate symptom columns combined.
+3. The X dataset was encoded first using `pd.get_dummies(X, dtype=int)`. This resulted in 127 columns of symptoms, which would need the titles cleaned and duplicate symptom columns combined. The value 1 represented the presence of a symptom and 0 represented the absence.
     - ![image](https://github.com/lvit001/Project-4/assets/140283164/49a89dd2-917f-4b62-94e0-b7e28a2ab5cc)
 4. The `Symptom_X_` prefix was removed from all the columns to leave only the symptom name.
 5. The duplicate columns were combined via addition through `X=X.groupby(level=0,axis=1).sum()`.
+    - ![image](https://github.com/lvit001/Project-4/assets/140283164/8b576778-3815-448d-8df7-518ea92a9a9c)
 6. 
 
 
