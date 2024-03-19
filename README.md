@@ -8,7 +8,22 @@ The group utilized a dataset from [Kaggle](https://www.kaggle.com/datasets/itach
 
 ## Data Pre-Processing
 To prepare the dataset for machine learning, the following pre-processing steps were taken:
-1. 
+
+1. The group decided to use 10/41 diseases, so the data frame was filtered for the following diseases
+    - Allergy
+    - Drug Reaction
+    - Migraine
+    - Common Cold
+    - Pneumonia
+    - Heart Attack
+    - Fungal Infection
+    - Hypoglycemia
+    - Urinary Tract Infection
+    - Chicken Pox 
+2. The data was broken into X and y data frames, X representing the features and y representing the output
+    - X = Disease Column
+    - y = Symptom Columns
+4. 
 
 
 
