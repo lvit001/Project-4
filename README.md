@@ -24,10 +24,10 @@ To prepare the dataset for machine learning, the following pre-processing steps 
     - X = Disease Column
     - y = Symptom Columns
 3. The X dataset was encoded first using `pd.get_dummies(X, dtype=int)`. This resulted in 127 columns of symptoms, which would need the titles cleaned and duplicate symptom columns combined.
-    4. ![image](https://github.com/lvit001/Project-4/assets/140283164/49a89dd2-917f-4b62-94e0-b7e28a2ab5cc)
-5. The `Symptom_X_` prefix was removed from all the columns to leave only the symptom name.
-6. The duplicate columns were combined via addition through `X=X.groupby(level=0,axis=1).sum()`.
-7. 
+    - ![image](https://github.com/lvit001/Project-4/assets/140283164/49a89dd2-917f-4b62-94e0-b7e28a2ab5cc)
+4. The `Symptom_X_` prefix was removed from all the columns to leave only the symptom name.
+5. The duplicate columns were combined via addition through `X=X.groupby(level=0,axis=1).sum()`.
+6. 
 
 
 
