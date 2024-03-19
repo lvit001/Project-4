@@ -46,10 +46,24 @@ For the neural network, additional pre-processing was required for the output da
 
 ### Compiling, Training, and Evaluating the initial Model
 - Total Number of Layers:
-    - 1st Hidden Layer (10 nodes; relu activation function; 10 input dimensions)
-    - 2nd Hidden Layer (10 nodes; relu activation function)
-    - Output Layer (10 output nodes; softmax activation function)
-- 
+    - **1st Hidden Layer** (10 nodes; relu activation function; 10 input dimensions)
+    - **2nd Hidden Layer** (10 nodes; relu activation function)
+    - **Output Layer** (10 output nodes; softmax activation function)
+    - ![image](https://github.com/lvit001/Project-4/assets/140283164/3f7091de-d90c-4f30-9b70-b72d2d246696)
+    - ![image](https://github.com/lvit001/Project-4/assets/140283164/22063c0f-5b00-4e20-b8f4-9bc0c4bcf12d)
+- Was the target model performance achieved?
+    - Yes, the model initially had a 77% accuracy.
+    - ![image](https://github.com/lvit001/Project-4/assets/140283164/375670fc-91f2-4897-b95b-94e1b401c90e)
+
+
+### Model Optimization
+- The model was optimized as follows:
+    - 1st Hidden Layer increased to **20 nodes**.
+    - ![image](https://github.com/lvit001/Project-4/assets/140283164/74bd8074-f2ae-49e1-803d-99b4da633ccc)
+    - ![image](https://github.com/lvit001/Project-4/assets/140283164/27492491-9d92-4cda-aeba-a08fbb074fe3)
+- Was the target model performance achieved?
+    - Yes, the model initially had a 100% accuracy.
+    - ![image](https://github.com/lvit001/Project-4/assets/140283164/8c18b6f0-f4a1-43d5-bf92-46f1f35a1f0d)
 
 ## Resources
 ### Pre-Processing Code
