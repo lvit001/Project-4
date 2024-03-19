@@ -68,6 +68,36 @@ For the neural network, additional pre-processing was required for the output da
  ### Model Summary
  The neural network model performed excellently, reaching an accuracy score of 100% after minimal optimization. 
 
+## Machine Learning Model 2: Logistic Regression
+### Data Pre-Processing
+Data preparation & extraction included reading in the 'diseases.sqlite' database into the pandas dataframe.
+Next, the data was split into training and testing sets. 
+
+### Compiling, Training, and Evaluating the initial Model
+The columns (X) were extracted from the DataFrame, excluding the disease column. The disease column was used as labels (y). The data was split into 80% training and 20% testing sets using train_test_split.
+A logistic regression model was trained using the training data (X_train and y_train), and evaluated through calculating accuracy, generating a confusion matrix, and classification report.
+
+### Model Summary
+The model achieved an accuracy of 100%, indicating perfect predictions on the testing set.
+                  precision    recall  f1-score   support
+    
+       Disease 0       1.00      1.00      1.00        21
+       Disease 1       1.00      1.00      1.00        26
+       Disease 2       1.00      1.00      1.00        24
+       Disease 3       1.00      1.00      1.00        23
+       Disease 4       1.00      1.00      1.00        23
+       Disease 5       1.00      1.00      1.00        33
+       Disease 6       1.00      1.00      1.00        19
+       Disease 7       1.00      1.00      1.00        22
+       Disease 8       1.00      1.00      1.00        24
+       Disease 9       1.00      1.00      1.00        25
+    
+        accuracy                           1.00       240
+       macro avg       1.00      1.00      1.00       240
+    weighted avg       1.00      1.00      1.00       240
+For further details, refer to the code and documentation provided in this repository.
+
+
 ## Resources
 ### Pre-Processing Code
 - Code `str.lstrip` to remove excess string from symptom headers found [here](https://stackoverflow.com/questions/55679401/remove-prefix-or-suffix-substring-from-column-headers-in-pandas).
