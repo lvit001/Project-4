@@ -28,7 +28,10 @@ To prepare the dataset for machine learning, the following pre-processing steps 
 4. The `Symptom_X_` prefix was removed from all the columns to leave only the symptom name.
 5. The duplicate columns were combined via addition through `X=X.groupby(level=0,axis=1).sum()`.
     - ![image](https://github.com/lvit001/Project-4/assets/140283164/8b576778-3815-448d-8df7-518ea92a9a9c)
-6. 
+6. The y dataset was cleaned next by first converting the string disease values to integers between 0-9.
+    - ![image](https://github.com/lvit001/Project-4/assets/140283164/4060b96e-582a-4f37-8a28-a6bacabb3769)
+    - ![image](https://github.com/lvit001/Project-4/assets/140283164/7312e1fb-2cde-4136-b70e-5915db26e79a)
+7.  
 
 
 
