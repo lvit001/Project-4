@@ -62,8 +62,11 @@ For the neural network, additional pre-processing was required for the output da
     - ![image](https://github.com/lvit001/Project-4/assets/140283164/74bd8074-f2ae-49e1-803d-99b4da633ccc)
     - ![image](https://github.com/lvit001/Project-4/assets/140283164/27492491-9d92-4cda-aeba-a08fbb074fe3)
 - Was the target model performance achieved?
-    - Yes, the model initially had a 100% accuracy.
+    - Yes, the model reached 100% accuracy.
     - ![image](https://github.com/lvit001/Project-4/assets/140283164/8c18b6f0-f4a1-43d5-bf92-46f1f35a1f0d)
+
+ ### Model Summary
+ The neural network model performed excellently, reaching an accuracy score of 100% after minimal optimization. 
 
 ## Resources
 ### Pre-Processing Code
