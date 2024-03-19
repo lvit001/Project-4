@@ -32,9 +32,24 @@ To prepare the dataset for machine learning, the following pre-processing steps 
     - ![image](https://github.com/lvit001/Project-4/assets/140283164/4060b96e-582a-4f37-8a28-a6bacabb3769)
     - ![image](https://github.com/lvit001/Project-4/assets/140283164/7312e1fb-2cde-4136-b70e-5915db26e79a)
 7.  Once both datasets were cleaned, they were concatenated and saved to a CSV file.
-8.  The encoded CSV filed was then converted to a SQLite database
+8.  The encoded CSV file was then converted to a SQLite database
     - ![image](https://github.com/lvit001/Project-4/assets/140283164/2f543dfa-a16b-4b04-931a-b15ce08f5044)
 
+## Machine Learning Model 1: Neural Network
+### Data Pre-Processing
+For the neural network, additional pre-processing was required for the output data:
+1. The data was loaded in from the diseases.sqlite database and converted to a pandas dataframe.
+2. The data was split into X and y variables, with X once again representing the symptoms and y representing the diseases.
+3. The data was then split into training and testing datasets with `train_test_split(X, y, random_state=42, stratify=y)`
+4. The y_train and y_test datasets were converted to binary arrays using `to_categorical`
+    - ![image](https://github.com/lvit001/Project-4/assets/140283164/b629d024-7c86-49a4-b51d-b281c8e7ea26)
+
+### Compiling, Training, and Evaluating the initial Model
+- Total Number of Layers:
+    - 1st Hidden Layer (10 nodes; relu activation function; 10 input dimensions)
+    - 2nd Hidden Layer (10 nodes; relu activation function)
+    - Output Layer (10 output nodes; softmax activation function)
+- 
 
 ## Resources
 ### Pre-Processing Code
