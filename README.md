@@ -52,9 +52,8 @@ For the neural network, additional pre-processing was required for the output da
     - ![image](https://github.com/lvit001/Project-4/assets/140283164/3f7091de-d90c-4f30-9b70-b72d2d246696)
     - ![image](https://github.com/lvit001/Project-4/assets/140283164/22063c0f-5b00-4e20-b8f4-9bc0c4bcf12d)
 - Was the target model performance achieved?
-    - Yes, the model initially had a 77% accuracy.
-    - ![image](https://github.com/lvit001/Project-4/assets/140283164/375670fc-91f2-4897-b95b-94e1b401c90e)
-
+    - Yes, the model initially had a 98% accuracy.
+    - ![image](https://github.com/lvit001/Project-4/assets/140283164/f0598167-1b5f-4a16-9adf-99d110aba437)
 
 ### Model Optimization
 - The model was optimized as follows:
@@ -63,7 +62,7 @@ For the neural network, additional pre-processing was required for the output da
     - ![image](https://github.com/lvit001/Project-4/assets/140283164/27492491-9d92-4cda-aeba-a08fbb074fe3)
 - Was the target model performance achieved?
     - Yes, the model reached 100% accuracy.
-    - ![image](https://github.com/lvit001/Project-4/assets/140283164/8c18b6f0-f4a1-43d5-bf92-46f1f35a1f0d)
+    - ![image](https://github.com/lvit001/Project-4/assets/140283164/f1dbce41-eded-42ea-a546-288805578773)
 
  ### Model Summary
  The neural network model performed excellently, reaching an accuracy score of 100% after minimal optimization. 
