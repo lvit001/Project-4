@@ -96,6 +96,9 @@ The model achieved an accuracy of 100%, indicating perfect predictions on the te
     weighted avg       1.00      1.00      1.00       240
 For further details, refer to the code and documentation provided in this repository.
 
+## Machine Learning Model 3: Random Forest
+### Data Pre-Processing
+
 
 ## Resources
 ### Pre-Processing Code
