@@ -12,12 +12,12 @@ html {
   }
   
   fieldset {
-    background: rgb(255, 255, 255);
-    border: 5px solid rgb(0, 0, 0);
+    background: cyan;
+    border: 5px solid blue;
   }
   
   legend {
     padding: 10px;
-    background: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    background: blue;
+    color: cyan;
   }

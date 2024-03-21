@@ -2,10 +2,10 @@
 const container = document.getElementById("checkboxContainer");
 
 // Define the number of checkboxes you want to create
-const numberOfCheckboxes = 51;
+const numberOfCheckboxes = 52;
 
 // Array of labels for the checkboxes
-const checkboxLabels = ['acidity', 'anxiety', 'bladder_discomfort',
+const checkboxLabels = ['acidity', 'palpitations', 'anxiety', 'bladder_discomfort',
 'blurred_and_distorted_vision', 'breathlessness', 'burning_micturition',
 'chest_pain', 'chills', 'congestion', 'continuous_feel_of_urine',
 'continuous_sneezing', 'cough', 'depression', 'dischromic _patches',
