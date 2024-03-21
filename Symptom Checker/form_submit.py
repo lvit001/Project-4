@@ -5,16 +5,16 @@ def format_result(prediction):
   prediction = prediction[0]
   for i in range(0, len(prediction)):
     prediction[i] = round(prediction[i] * 100, 2)
-  disease_dict = {"Disease0": str(prediction[0]) + "%",
-                  "Disease1": str(prediction[1]) + "%",
-                  "Disease2": str(prediction[2]) + "%",
-                  "Disease3": str(prediction[3]) + "%",
-                  "Disease4": str(prediction[4]) + "%",
-                  "Disease5": str(prediction[5]) + "%",
-                  "Disease6": str(prediction[6]) + "%",
-                  "Disease7": str(prediction[7]) + "%",
-                  "Disease8": str(prediction[8]) + "%",
-                  "Disease9": str(prediction[9]) + "%"}
+  disease_dict = {"Allergy": str(prediction[0]) + "%",
+                  "Drug Reaction": str(prediction[1]) + "%",
+                  "Migraine": str(prediction[2]) + "%",
+                  "Common Cold": str(prediction[3]) + "%",
+                  "Pneumonia": str(prediction[4]) + "%",
+                  "Heart attack": str(prediction[5]) + "%",
+                  "Fungal infection": str(prediction[6]) + "%",
+                  "Hypoglycemia": str(prediction[7]) + "%",
+                  "Urinary tract infection": str(prediction[8]) + "%",
+                  "Chicken pox": str(prediction[9]) + "%"}
   return disease_dict
   
 
