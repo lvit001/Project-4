@@ -99,6 +99,14 @@ For further details, refer to the code and documentation provided in this reposi
 ## Machine Learning Model 3: Random Forest
 ### Data Pre-Processing
 
+For the initial Random Forest, no additional pre-processing was needed and the data was pulled from directly from SQL into Python.  The data was split into testing and training sets and a random forest classifier was created.
+
+
+
+The features (X) were the disease symptoms, and the target vector (y) was the diseases themselves.  The 10 randomly chosen diseases from earlier were used for this model and a random forest regressor was created as well to control over-fitting, but yielded the same results.
+
+
+
 
 ## Resources
 ### Pre-Processing Code
