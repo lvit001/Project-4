@@ -3,7 +3,7 @@ html {
   }
   
   form {
-    width: 600px;
+    width: 400px;
     margin: 0 auto;
   }
   
@@ -12,12 +12,12 @@ html {
   }
   
   fieldset {
-    background: cyan;
-    border: 5px solid blue;
+    background: rgb(216, 225, 225);
+    border: 5px solid rgb(0, 5, 150);
   }
   
   legend {
     padding: 10px;
-    background: blue;
-    color: cyan;
+    background: rgb(0, 5, 150);
+    color: rgb(255, 255, 255);
   }
