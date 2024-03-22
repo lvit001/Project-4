@@ -105,10 +105,49 @@ For the initial Random Forest, no additional pre-processing was needed and the d
 
 The features (X) were the disease symptoms, and the target vector (y) was the diseases themselves.  The 10 randomly chosen diseases from earlier were used for this model and a random forest regressor was created as well to control over-fitting, but yielded the same results.
 
+## Machine Learning Model 4: Linear Regression
+### Data Pre-Processing
+For data pre-processing, data was read into a Pandas Dataframe from a sqlite file.
 
+### Compiling, Training, and Evaluating the initial Model
+The data was split into X and y variables, y being the disease column and x being everything else. Afterwards, the y value was divided into 10 dummy columns and the X and y values were used to train a multiple LinearRegression() model.
+
+### Model Summary
+Details can also be found in the "Machine Learning Models" directory multiple_regression.ipynb file
+
+The score is 0.9876581493722678.
+The r2 is 0.9876581493722678.
+The mean squared error is 0.001110766556495892.
+The root mean squared error is 0.03332816461337006.
+The standard deviation for each disease is: 
+0    0.3
+1    0.3
+2    0.3
+3    0.3
+4    0.3
+5    0.3
+6    0.3
+7    0.3
+8    0.3
+9    0.3
+
+## Flask API Details
+### Summary
+The Flask API re-implements the logistic regression model found in the "Machine Learning Models" directory "Logistic Regression.ipynb" and allows users to select from a list of 51 symptoms. After the user submits their list of symptoms, the model will predict the disease most likely present from our list of 10 diseases.
+### How to use
+- Run the log_regression.py file from the "Symptom Checker" directory
+- Open localhost in your browser
+- Click the checkboxes to indicate symptoms
+- Click submit to see the results
+### Limitations
+The model only shows the most likely result but doesn't show how likely that result actually is. Also, the model only has 10 total diseases to compare against
 
 
 ## Resources
 ### Pre-Processing Code
 - Code `str.lstrip` to remove excess string from symptom headers found [here](https://stackoverflow.com/questions/55679401/remove-prefix-or-suffix-substring-from-column-headers-in-pandas).
-- Code `X.groupby(level=0,axis=1).sum()` to add columns with the same column title and remove duplicates found [here](https://stackoverflow.com/questions/58809851/how-can-i-add-the-values-of-pandas-columns-with-the-same-name). 
+- Code `X.groupby(level=0,axis=1).sum()` to add columns with the same column title and remove duplicates found [here](https://stackoverflow.com/questions/58809851/how-can-i-add-the-values-of-pandas-columns-with-the-same-name).
+- template for the results in the API page [here](https://stackoverflow.com/questions/14652325/python-dictionary-in-to-html-table)
+- Code for creating X and y values for a multiple regression [here](https://www.w3schools.com/python/python_ml_multiple_regression.asp)
+- Code for starting a flask api [here](https://www.digitalocean.com/community/tutorials/how-to-use-templates-in-a-flask-application)
+- Code for creating checkboxes in html [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox)
