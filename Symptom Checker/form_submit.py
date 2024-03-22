@@ -5,6 +5,8 @@ def format_result(prediction):
   prediction = prediction[0]
   for i in range(0, len(prediction)):
     prediction[i] = round(prediction[i] * 100, 2)
+    if prediction[i] < 0.1:
+      prediction[i] = 0.0
   disease_dict = {"Allergy": str(prediction[0]) + "%",
                   "Drug Reaction": str(prediction[1]) + "%",
                   "Migraine": str(prediction[2]) + "%",
