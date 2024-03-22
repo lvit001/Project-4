@@ -3,28 +3,11 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 from flask import Flask, render_template, request
 def format_result(prediction):
-  print('prediction is' + str(prediction))
-  disease = ""
-  if prediction == 0:
-    disease = 'Allergy'
-  elif prediction == 1:
-    disease = 'Drug Reaction'
-  elif prediction == 1:
-    disease = 'Migraine'  
-  elif prediction == 1:
-    disease = 'Common Cold'  
-  elif prediction == 1:
-    disease = 'Pneumonia'  
-  elif prediction == 1:
-    disease = 'Heart attack'  
-  elif prediction == 1:
-    disease = 'Fungal infection'  
-  elif prediction == 1:
-    disease = 'Hypoglycemia'  
-  elif prediction == 1:
-    disease = 'Urinary tract infection'  
-  else:
-    disease = 'Chicken pox'  
+  disease_list = ['Allergy', 'Drug Reaction', 'Migraine', 'Common Cold', 
+                  'Pneumonia', 'Heart attack', 'Fungal infection',
+                  'Hypoglycemia', 'Urinary tract infection', 'Chicken pox']
+  
+  disease = disease_list[prediction[0]]
 
   return disease
   
@@ -32,19 +15,11 @@ def format_result(prediction):
 
 def predict_disease(symptoms):
   df = pd.read_csv('encoded_data.csv')
-  print(1)
   y = df["Disease"]
-  print(2)
   X = df.drop(columns="Disease")
-  print(3)
   X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-  print(4)
   logistic_model = LogisticRegression()
-  print(5)
   logistic_model.fit(X_train, y_train)
-  print(6)
-  print (logistic_model.predict([symptoms]))
-  #return str(format_result(regression.predict([symptoms])))
   return format_result(logistic_model.predict([symptoms]))
   
 
@@ -67,12 +42,9 @@ def submit():
       print(symptom_list)
   print(symptom_list)
   result = predict_disease(symptom_list)
-  #return (result)
   #html for result template
   #https://stackoverflow.com/questions/14652325/python-dictionary-in-to-html-table
-  #return render_template('result.html', result = result)
-  return(result)
-  
+  return render_template('result.html', result = result)
 
 
 if __name__ == '__main__':
