@@ -115,21 +115,21 @@ The data was split into X and y variables, y being the disease column and x bein
 ### Model Summary
 Details can also be found in the "Machine Learning Models" directory multiple_regression.ipynb file
 
-The score is 0.9876581493722678.
-The r2 is 0.9876581493722678.
-The mean squared error is 0.001110766556495892.
-The root mean squared error is 0.03332816461337006.
-The standard deviation for each disease is: 
-0    0.3
-1    0.3
-2    0.3
-3    0.3
-4    0.3
-5    0.3
-6    0.3
-7    0.3
-8    0.3
-9    0.3
+The score is 0.9876581493722678.\
+The r2 is 0.9876581493722678.\
+The mean squared error is 0.001110766556495892.\
+The root mean squared error is 0.03332816461337006.\
+The standard deviation for each disease is:\
+0: 0.3\
+1: 0.3\
+2: 0.3\
+3: 0.3\
+4: 0.3\
+5: 0.3\
+6: 0.3\
+7: 0.3\
+8: 0.3\
+9: 0.3
 
 ## Flask API Details
 ### Summary
