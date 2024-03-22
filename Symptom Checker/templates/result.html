@@ -1,18 +1,9 @@
 <table>
-  <h3>Percent chance you could have each disease according to our model:</h3>
-    <thead>
-      <tr>
-        <th>Disease</th>
-        <th>Percentage</th>
-      </tr>
-    </thead>
+  <h3>Most likely disease according to our model:</h3>
     <tbody>
-    {% for key, value in result.items() %}
      <tr>
-         <td> {{ key }} </td>
-         <td> {{ value }} </td>
+         <td> {{result}} </td>
      </tr>
-    {% endfor %}
     </tbody>
   </table>
-  <!-- <link rel="stylesheet" type="text/css" href="../static/results_style.css"> -->
+  <link rel="stylesheet" type="text/css" href="../static/results_style.css">
