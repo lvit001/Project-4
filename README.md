@@ -147,7 +147,11 @@ The model only shows the most likely result but doesn't show how likely that res
 ### Pre-Processing Code
 - Code `str.lstrip` to remove excess string from symptom headers found [here](https://stackoverflow.com/questions/55679401/remove-prefix-or-suffix-substring-from-column-headers-in-pandas).
 - Code `X.groupby(level=0,axis=1).sum()` to add columns with the same column title and remove duplicates found [here](https://stackoverflow.com/questions/58809851/how-can-i-add-the-values-of-pandas-columns-with-the-same-name).
-- template for the results in the API page [here](https://stackoverflow.com/questions/14652325/python-dictionary-in-to-html-table)
+
+### Machine Learning Code
 - Code for creating X and y values for a multiple regression [here](https://www.w3schools.com/python/python_ml_multiple_regression.asp)
+
+### Flask API Cpode
+- Template for the results in the API page [here](https://stackoverflow.com/questions/14652325/python-dictionary-in-to-html-table)
 - Code for starting a flask api [here](https://www.digitalocean.com/community/tutorials/how-to-use-templates-in-a-flask-application)
 - Code for creating checkboxes in html [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox)
