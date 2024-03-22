@@ -1,2 +1,8 @@
 # Ignore directories
 Mi/
+Lori/
+Athen/
+.ipynb_checkpoints/
+
+# Ignore files
+/.DS_Store
