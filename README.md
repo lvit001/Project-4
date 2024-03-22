@@ -103,6 +103,11 @@ For the initial Random Forest, no additional pre-processing was needed and the d
 
 
 
+The features (X) were the disease symptoms, and the target vector (y) was the diseases themselves.  The 10 randomly chosen diseases from earlier were used for this model and a random forest regressor was created as well to control over-fitting, but yielded the same results.
+
+
+
+
 ## Resources
 ### Pre-Processing Code
 - Code `str.lstrip` to remove excess string from symptom headers found [here](https://stackoverflow.com/questions/55679401/remove-prefix-or-suffix-substring-from-column-headers-in-pandas).
