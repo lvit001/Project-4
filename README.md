@@ -34,6 +34,18 @@ To prepare the dataset for machine learning, the following pre-processing steps 
 7.  Once both datasets were cleaned, they were concatenated and saved to a CSV file.
 8.  The encoded CSV file was then converted to a SQLite database
     - ![image](https://github.com/lvit001/Project-4/assets/140283164/2f543dfa-a16b-4b04-931a-b15ce08f5044)
+  
+
+## Data Analysis
+The data was analyzed by comparing commonly occurring symptoms (present in 3 or more diseases) by disease. A Tableau side-by-side bar chart was used to visualize the data [here](https://public.tableau.com/app/profile/lori.vitaioli/viz/Disease-SymptomComparison/SharedSymptoms?publish=yes).
+
+![image](https://github.com/lvit001/Project-4/assets/140283164/640139c4-4751-45f8-95d6-e70d542b5929)
+
+### Initial Observations:
+1. Common Cold and Pneumonia share 4 out of 5 common symptoms being represented
+2. Drug Reaction and Fungal Infection patients commonly report itching and skin rash
+3. Urinary Tract Infection did not share any common symptoms with the other diseases in the dataset
+
 
 ## Machine Learning Model 1: Neural Network
 ### Data Pre-Processing
