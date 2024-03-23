@@ -44,8 +44,9 @@ The data was analyzed by comparing commonly occurring symptoms (present in 3 or 
 ### Initial Observations:
 1. Common Cold and Pneumonia share 4 out of 7 of the common symptoms being analyzed
 2. Drug Reaction and Fungal Infection patients commonly report itching and skin rash
-3. Urinary Tract Infection did not share any common symptoms with the other diseases in the dataset
+3. Urinary Tract Infection did not share any common symptoms with the other diseases in the dataset. Of the four reported symptoms of UTIs, only Drug Reaction shared one of the symptoms (burning micturition)
 
+![image](https://github.com/lvit001/Project-4/assets/140283164/506ad2c1-ad0e-4970-9406-9946daef10a2)
 
 ## Machine Learning Model 1: Neural Network
 ### Data Pre-Processing
