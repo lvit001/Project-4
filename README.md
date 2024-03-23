@@ -42,7 +42,7 @@ The data was analyzed by comparing commonly occurring symptoms (present in 3 or 
 ![image](https://github.com/lvit001/Project-4/assets/140283164/640139c4-4751-45f8-95d6-e70d542b5929)
 
 ### Initial Observations:
-1. Common Cold and Pneumonia share 4 out of 5 common symptoms being represented
+1. Common Cold and Pneumonia share 4 out of 7 of the common symptoms being analyzed
 2. Drug Reaction and Fungal Infection patients commonly report itching and skin rash
 3. Urinary Tract Infection did not share any common symptoms with the other diseases in the dataset
 
