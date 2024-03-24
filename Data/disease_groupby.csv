@@ -1,0 +1,11 @@
+Disease,acidity,anxiety,bladder_discomfort,blurred_and_distorted_vision,breathlessness,burning_micturition,chest_pain,chills,congestion,continuous_feel_of_urine,continuous_sneezing,cough,depression,dischromic _patches,drying_and_tingling_lips,excessive_hunger,fast_heart_rate,fatigue,foul_smell_of urine,headache,high_fever,indigestion,irritability,itching,lethargy,loss_of_appetite,loss_of_smell,malaise,mild_fever,muscle_pain,nausea,nodal_skin_eruptions,palpitations,phlegm,red_spots_over_body,redness_of_eyes,runny_nose,rusty_sputum,shivering,sinus_pressure,skin_rash,slurred_speech,spotting_ urination,stiff_neck,stomach_pain,sweating,swelled_lymph_nodes,throat_irritation,visual_disturbances,vomiting,watering_from_eyes
+Allergy,0,0,0,0,0,0,0,108,0,0,108,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,108,0,0,0,0,0,0,0,0,0,0,0,108
+Chicken pox,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,114,0,114,114,0,0,114,114,114,0,120,114,0,0,0,0,0,120,0,0,0,0,0,114,0,0,0,0,0,114,0,0,0,0
+Common Cold,0,0,0,0,0,0,120,114,120,0,114,114,0,0,0,0,0,114,0,114,114,0,0,0,0,0,120,114,0,120,0,0,0,120,0,120,120,0,0,120,0,0,0,0,0,0,114,120,0,0,0
+Drug Reaction,0,0,0,0,0,108,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,114,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,108,0,108,0,108,0,0,0,0,0,0
+Fungal infection,0,0,0,0,0,0,0,0,0,0,0,0,0,108,0,0,0,0,0,0,0,0,0,108,0,0,0,0,0,0,0,108,0,0,0,0,0,0,0,0,108,0,0,0,0,0,0,0,0,0,0
+Heart attack,0,0,0,0,108,0,114,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,108,0,0,0,108,0
+Hypoglycemia,0,114,0,114,0,0,0,0,0,0,0,0,0,0,114,120,0,114,0,114,0,0,120,0,0,0,0,0,0,0,114,0,120,0,0,0,0,0,0,0,0,120,0,0,0,114,0,0,0,114,0
+Migraine,114,0,0,114,0,0,0,0,0,0,0,0,114,0,0,114,0,0,0,114,0,114,114,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,114,0,0,0,0,114,0,0
+Pneumonia,0,0,0,0,114,0,120,114,0,0,0,114,0,0,0,0,120,114,0,0,114,0,0,0,0,0,0,114,0,0,0,0,0,114,0,0,0,120,0,0,0,0,0,0,0,114,0,0,0,0,0
+Urinary tract infection,0,0,114,0,0,108,0,0,0,114,0,0,0,0,0,0,0,0,102,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
