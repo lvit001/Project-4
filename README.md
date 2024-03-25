@@ -112,11 +112,23 @@ For further details, refer to the code and documentation provided in this reposi
 ## Machine Learning Model 3: Random Forest
 ### Data Pre-Processing
 
-For the initial Random Forest, no additional pre-processing was needed and the data was pulled from directly from SQL into Python.  The data was split into testing and training sets and a random forest classifier was created.
+For the initial Random Forest, no additional pre-processing was needed and the data was pulled directly from SQL into Python.  The data was split into testing and training sets and a random forest classifier was created.
 
-
+![Screenshot 2024-03-21 204138](https://github.com/lvit001/Project-4/assets/145800386/94c10ea7-b015-47c4-9046-421ab9b115d6)
 
 The features (X) were the disease symptoms, and the target vector (y) was the diseases themselves.  The 10 randomly chosen diseases from earlier were used for this model and a random forest regressor was created as well to control over-fitting, but yielded the same results.
+
+![Screenshot 2024-03-21 204331](https://github.com/lvit001/Project-4/assets/145800386/ec7324aa-a7e9-4daa-866f-873eefd28bf6)
+
+### Model Summary
+Similar to other Machine Learning Models, the Random Forest generated an accuracy of 100% indicating perfect predictions on the testing data.  
+
+![Screenshot 2024-03-21 204955](https://github.com/lvit001/Project-4/assets/145800386/0cd3bdfb-c1e4-49ab-bae8-c894dc8ab618)
+
+![Screenshot 2024-03-21 204118](https://github.com/lvit001/Project-4/assets/145800386/b13df670-16a4-459f-a32e-d74fec94841b)
+
+![Screenshot 2024-03-21 211951](https://github.com/lvit001/Project-4/assets/145800386/92e159f1-573d-4571-9d05-fad5cd4497e1)
+
 
 ## Machine Learning Model 4: Linear Regression
 ### Data Pre-Processing
@@ -163,6 +175,7 @@ The model only shows the most likely result but doesn't show how likely that res
 
 ### Machine Learning Code
 - Code for creating X and y values for a multiple regression [here](https://www.w3schools.com/python/python_ml_multiple_regression.asp)
+- Random Forest Visualization assistance [here](https://www.codementor.io/@mgalarny/visualizing-decision-trees-with-python-scikit-learn-graphviz-matplotlib-154mszcto7)
 
 ### Flask API Cpode
 - Template for the results in the API page [here](https://stackoverflow.com/questions/14652325/python-dictionary-in-to-html-table)
