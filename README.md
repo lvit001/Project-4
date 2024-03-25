@@ -1,6 +1,6 @@
 # Project 4: Healthcare Machine Learning
 ## Project Overview
-Group 6 analyzed a dataset containing symptoms that correspond to certain diseases. They sought to create a machine-learning model that predicts a patient's potential disease based on their symptoms. The group developed and compared a few machine-learning models and determined which one most accurately predicts diseases based on symptoms.
+Group 6 analyzed a dataset containing symptoms that correspond to certain diseases. They aimed to create a machine-learning model that predicts a patient's potential disease based on their symptoms. The group developed and compared a few machine-learning models to find the most accurate one.
 
 ## Data Set
 The group utilized a dataset from [Kaggle](https://www.kaggle.com/datasets/itachi9604/disease-symptom-description-dataset?select=dataset.csv). The initial dataset contained a column with the disease name and columns for the related symptoms (up to 17 symptoms per disease). There were 41 different diseases and 120 rows for each disease.
@@ -48,37 +48,31 @@ The data was analyzed by comparing commonly occurring symptoms (present in 3 or 
 
 ![image](https://github.com/lvit001/Project-4/assets/140283164/506ad2c1-ad0e-4970-9406-9946daef10a2)
 
-## Machine Learning Model 1: Neural Network
+## Machine Learning Model 1: Linear Regression
 ### Data Pre-Processing
-For the neural network, additional pre-processing was required for the output data:
-1. The data was loaded in from the diseases.sqlite database and converted to a pandas dataframe.
-2. The data was split into X and y variables, with X once again representing the symptoms and y representing the diseases.
-3. The data was then split into training and testing datasets with `train_test_split(X, y, random_state=42, stratify=y)`
-4. The y_train and y_test datasets were converted to binary arrays using `to_categorical`
-    - ![image](https://github.com/lvit001/Project-4/assets/140283164/b629d024-7c86-49a4-b51d-b281c8e7ea26)
+For data pre-processing, data was read into a Pandas dataframe from a SQLite file.
 
 ### Compiling, Training, and Evaluating the initial Model
-- Total Number of Layers:
-    - **1st Hidden Layer** (10 nodes; relu activation function; 10 input dimensions)
-    - **2nd Hidden Layer** (10 nodes; relu activation function)
-    - **Output Layer** (10 output nodes; softmax activation function)
-    - ![image](https://github.com/lvit001/Project-4/assets/140283164/3f7091de-d90c-4f30-9b70-b72d2d246696)
-    - ![image](https://github.com/lvit001/Project-4/assets/140283164/22063c0f-5b00-4e20-b8f4-9bc0c4bcf12d)
-- Was the target model performance achieved?
-    - Yes, the model initially had a 98% accuracy.
-    - ![image](https://github.com/lvit001/Project-4/assets/140283164/f0598167-1b5f-4a16-9adf-99d110aba437)
+The data was split into X and y variables, y being the disease column and x being everything else. Afterwards, the y value was divided into 10 dummy columns and the X and y values were used to train a multiple LinearRegression() model.
 
-### Model Optimization
-- The model was optimized as follows:
-    - 1st Hidden Layer increased to **20 nodes**.
-    - ![image](https://github.com/lvit001/Project-4/assets/140283164/74bd8074-f2ae-49e1-803d-99b4da633ccc)
-    - ![image](https://github.com/lvit001/Project-4/assets/140283164/27492491-9d92-4cda-aeba-a08fbb074fe3)
-- Was the target model performance achieved?
-    - Yes, the model reached 100% accuracy.
-    - ![image](https://github.com/lvit001/Project-4/assets/140283164/f1dbce41-eded-42ea-a546-288805578773)
+### Model Summary
+Details can also be found in the "Machine Learning Models" directory multiple_regression.ipynb file
 
- ### Model Summary
- The neural network model performed excellently, reaching an accuracy score of 100% after minimal optimization. 
+The score is 0.9876581493722678.\
+The r2 is 0.9876581493722678.\
+The mean squared error is 0.001110766556495892.\
+The root mean squared error is 0.03332816461337006.\
+The standard deviation for each disease is:\
+0: 0.3\
+1: 0.3\
+2: 0.3\
+3: 0.3\
+4: 0.3\
+5: 0.3\
+6: 0.3\
+7: 0.3\
+8: 0.3\
+9: 0.3
 
 ## Machine Learning Model 2: Logistic Regression
 ### Data Pre-Processing
@@ -129,32 +123,37 @@ Similar to other Machine Learning Models, the Random Forest generated an accurac
 
 ![Screenshot 2024-03-21 211951](https://github.com/lvit001/Project-4/assets/145800386/92e159f1-573d-4571-9d05-fad5cd4497e1)
 
-
-## Machine Learning Model 4: Linear Regression
+## Machine Learning Model 4: Neural Network
 ### Data Pre-Processing
-For data pre-processing, data was read into a Pandas Dataframe from a sqlite file.
+For the neural network, additional pre-processing was required for the output data:
+1. The data was loaded in from the diseases.sqlite database and converted to a pandas dataframe.
+2. The data was split into X and y variables, with X once again representing the symptoms and y representing the diseases.
+3. The data was then split into training and testing datasets with `train_test_split(X, y, random_state=42, stratify=y)`
+4. The y_train and y_test datasets were converted to binary arrays using `to_categorical`
+    - ![image](https://github.com/lvit001/Project-4/assets/140283164/b629d024-7c86-49a4-b51d-b281c8e7ea26)
 
 ### Compiling, Training, and Evaluating the initial Model
-The data was split into X and y variables, y being the disease column and x being everything else. Afterwards, the y value was divided into 10 dummy columns and the X and y values were used to train a multiple LinearRegression() model.
+- Total Number of Layers:
+    - **1st Hidden Layer** (10 nodes; relu activation function; 10 input dimensions)
+    - **2nd Hidden Layer** (10 nodes; relu activation function)
+    - **Output Layer** (10 output nodes; softmax activation function)
+    - ![image](https://github.com/lvit001/Project-4/assets/140283164/3f7091de-d90c-4f30-9b70-b72d2d246696)
+    - ![image](https://github.com/lvit001/Project-4/assets/140283164/22063c0f-5b00-4e20-b8f4-9bc0c4bcf12d)
+- Was the target model performance achieved?
+    - Yes, the model initially had a 98% accuracy.
+    - ![image](https://github.com/lvit001/Project-4/assets/140283164/f0598167-1b5f-4a16-9adf-99d110aba437)
 
-### Model Summary
-Details can also be found in the "Machine Learning Models" directory multiple_regression.ipynb file
+### Model Optimization
+- The model was optimized as follows:
+    - 1st Hidden Layer increased to **20 nodes**.
+    - ![image](https://github.com/lvit001/Project-4/assets/140283164/74bd8074-f2ae-49e1-803d-99b4da633ccc)
+    - ![image](https://github.com/lvit001/Project-4/assets/140283164/27492491-9d92-4cda-aeba-a08fbb074fe3)
+- Was the target model performance achieved?
+    - Yes, the model reached 100% accuracy.
+    - ![image](https://github.com/lvit001/Project-4/assets/140283164/f1dbce41-eded-42ea-a546-288805578773)
 
-The score is 0.9876581493722678.\
-The r2 is 0.9876581493722678.\
-The mean squared error is 0.001110766556495892.\
-The root mean squared error is 0.03332816461337006.\
-The standard deviation for each disease is:\
-0: 0.3\
-1: 0.3\
-2: 0.3\
-3: 0.3\
-4: 0.3\
-5: 0.3\
-6: 0.3\
-7: 0.3\
-8: 0.3\
-9: 0.3
+ ### Model Summary
+ The neural network model performed excellently, reaching an accuracy score of 100% after minimal optimization. 
 
 ## Flask API Details
 ### Summary
