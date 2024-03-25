@@ -1,6 +1,6 @@
 # Project 4: Healthcare Machine Learning
 ## Project Overview
-Group 6 analyzed a dataset containing symptoms that correspond to certain diseases. They aimed to create a machine-learning model that predicts a patient's potential disease based on their symptoms. The group developed and compared a few machine-learning models to find the most accurate one.
+Group 6 analyzed a dataset containing symptoms that correspond to certain diseases. They aimed to create a machine-learning model that predicts a patient's potential disease based on their symptoms. The group developed and compared a few machine-learning models to find the most accurate one. Once they had a successful model, they developed a Flask API that would use the machine learning model to predict a user's potential disease based on their inputs.
 
 ## Data Set
 The group utilized a dataset from [Kaggle](https://www.kaggle.com/datasets/itachi9604/disease-symptom-description-dataset?select=dataset.csv). The initial dataset contained a column with the disease name and columns for the related symptoms (up to 17 symptoms per disease). There were 41 different diseases and 120 rows for each disease.
@@ -165,6 +165,8 @@ The Flask API re-implements the logistic regression model found in the "Machine 
 - Click submit to see the results
 ### Limitations
 The model only shows the most likely result but doesn't show how likely that result actually is. Also, the model only has 10 total diseases to compare against
+
+## Conclusion
 
 
 ## Resources
