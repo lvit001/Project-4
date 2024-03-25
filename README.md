@@ -117,9 +117,9 @@ The features (X) were the disease symptoms, and the target vector (y) was the di
 ### Model Summary
 Similar to other Machine Learning Models, the Random Forest generated an accuracy of 100% indicating perfect predictions on the testing data.  
 
-![Screenshot 2024-03-21 204955](https://github.com/lvit001/Project-4/assets/145800386/0cd3bdfb-c1e4-49ab-bae8-c894dc8ab618)
+![Screenshot 2024-03-21 204955](https://github.com/lvit001/Project-4/assets/145800386/49e15fef-5d09-44b1-a6d2-b0889c89cb53)
 
-![Screenshot 2024-03-21 204118](https://github.com/lvit001/Project-4/assets/145800386/b13df670-16a4-459f-a32e-d74fec94841b)
+![Screenshot 2024-03-21 204118](https://github.com/lvit001/Project-4/assets/145800386/a782a318-79ea-400f-bafd-147a7020ab17)
 
 ![Screenshot 2024-03-21 211951](https://github.com/lvit001/Project-4/assets/145800386/92e159f1-573d-4571-9d05-fad5cd4497e1)
 
