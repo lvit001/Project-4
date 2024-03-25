@@ -1,6 +1,6 @@
 # Project 4: Healthcare Machine Learning
 ## Project Overview
-Group 6 analyzed a dataset containing symptoms that correspond to certain diseases. They aimed to create a machine-learning model that predicts a patient's potential disease based on their symptoms. The group developed and compared a few machine-learning models to find the most accurate one. Once they had a successful model, they developed a Flask API that would use the machine learning model to predict a user's potential disease based on their inputs.
+Group 6 analyzed a dataset containing symptoms that correspond to certain diseases. They aimed to create a machine-learning model that can predict a patient's potential disease based on their symptoms. The group developed and compared a few machine-learning models to find the most accurate one. Once they had a successful model, they developed a Flask API using the machine learning model to predict a user's disease based on their inputs.
 
 ## Data Set
 The group utilized a dataset from [Kaggle](https://www.kaggle.com/datasets/itachi9604/disease-symptom-description-dataset?select=dataset.csv). The initial dataset contained a column with the disease name and columns for the related symptoms (up to 17 symptoms per disease). There were 41 different diseases and 120 rows for each disease.
@@ -31,7 +31,7 @@ To prepare the dataset for machine learning, the following pre-processing steps 
 6. The y dataset was cleaned next by first converting the string disease values to integers between 0-9. This was done as machine learning models required numerical data.
     - ![image](https://github.com/lvit001/Project-4/assets/140283164/4060b96e-582a-4f37-8a28-a6bacabb3769)
     - ![image](https://github.com/lvit001/Project-4/assets/140283164/7312e1fb-2cde-4136-b70e-5915db26e79a)
-7.  Once both datasets were cleaned, they were concatenated and saved to a CSV file.
+7.  Once cleaned, both datasets were concatenated and saved to a CSV file.
 8.  The encoded CSV file was then converted to a SQLite database
     - ![image](https://github.com/lvit001/Project-4/assets/140283164/2f543dfa-a16b-4b04-931a-b15ce08f5044)
   
