@@ -167,7 +167,13 @@ The Flask API re-implements the logistic regression model found in the "Machine 
 The model only shows the most likely result but doesn't show how likely that result actually is. Also, the model only has 10 total diseases to compare against
 
 ## Conclusion
-
+### ¾ of the machine learning models achieved 100% accuracy
+The models were able to easily interpret the dataset due to the consistency of symptoms for each disease
+### Limitations
+Only selecting 10/41 diseases in the dataset means the model is limited in what it can predict
+### What's next?
+- Add more data to the model: the other 31 diseases not initially included and more beyond those
+- Machine learning models like these can assist medical professionals when diagnosing patients, which can lead to more efficient treatment. However, a model alone should not be used as a diagnosis tool
 
 ## Resources
 ### Pre-Processing Code
