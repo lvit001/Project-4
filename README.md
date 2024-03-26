@@ -184,7 +184,7 @@ Only selecting 10/41 diseases in the dataset means the model is limited in what 
 - Code for creating X and y values for a multiple regression [here](https://www.w3schools.com/python/python_ml_multiple_regression.asp)
 - Random Forest Visualization assistance [here](https://www.codementor.io/@mgalarny/visualizing-decision-trees-with-python-scikit-learn-graphviz-matplotlib-154mszcto7)
 
-### Flask API Cpode
+### Flask API Code
 - Template for the results in the API page [here](https://stackoverflow.com/questions/14652325/python-dictionary-in-to-html-table)
 - Code for starting a flask api [here](https://www.digitalocean.com/community/tutorials/how-to-use-templates-in-a-flask-application)
 - Code for creating checkboxes in html [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox)
