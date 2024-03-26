@@ -39,8 +39,7 @@ def submit():
       symptom_list.append(1)
     else:
       symptom_list.append(0)
-      print(symptom_list)
-  print(symptom_list)
+
   result = predict_disease(symptom_list)
   #html for result template
   #https://stackoverflow.com/questions/14652325/python-dictionary-in-to-html-table
